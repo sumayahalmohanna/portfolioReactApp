@@ -9,7 +9,7 @@ export default function App(){
   return (
 
       <Switch>
-        <Redirect exact from="/"  to="/home/about" />
+        <Redirect exact from="/portfolioReactApp"  to="/home/about" />
         <Route exact path="/home/:page?"  render={props => <Home {...props} />} />
         <Route render={props => <FoFPage {...props} />} />
       </Switch>
