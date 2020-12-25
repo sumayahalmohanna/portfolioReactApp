@@ -14,6 +14,7 @@ import CaseStudies from '../CaseStudies/CaseStudies';
 import Contact from '../Contact/Contact';
 import FoFPage from '../FoFPage';
 import { makeStyles } from '@material-ui/core/styles';
+import {withRouter} from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
 
@@ -126,4 +127,4 @@ const Home = props => {
   );
 };
 
-export default Home;
+export default withRouter(Home);

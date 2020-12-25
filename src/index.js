@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import {BrowserRouter} from 'react-router-dom';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import {HashRouter as Router} from 'react-router-dom';
 
 const theme = createMuiTheme({
   palette: {
@@ -81,11 +81,11 @@ const theme = createMuiTheme({
 });
 
 const app = (
-  <BrowserRouter basename='/portfolioReactApp'>
-    <ThemeProvider theme={theme}>
+    <Router>
+      <ThemeProvider theme={theme}>
         <App />
     </ThemeProvider>
-  </BrowserRouter>
+    </Router>
 );
 
 ReactDOM.render(app,

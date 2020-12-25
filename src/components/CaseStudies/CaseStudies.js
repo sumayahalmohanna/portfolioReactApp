@@ -55,7 +55,7 @@ function CaseStudies(props) {
 
         <Grid item xs={12}>
           <Grid item container justify='center'>
-            <Button disabled size="large" href="/contact" variant="contained" color="primary">
+            <Button size="large" href="/contact" variant="contained" color="primary">
                Let's talk!
              </Button>
           </Grid>

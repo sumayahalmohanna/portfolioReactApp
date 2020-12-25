@@ -50,7 +50,7 @@ export default function About(){
         <Grid className={classes.content} container alignContent='center'>
           <Grid item xs={12} md={4}>
               <Grid container justify='center'>
-                <img alt="Profile picture of Sam."
+                <img alt="Profile of Sam."
                   className={classes.profileImg}
                   src={require(ProfilePicture)}
                 />
@@ -89,7 +89,7 @@ export default function About(){
             </Grid>
           </Grid>
         </Grid>
-        <img alt="Background Image."
+        <img alt="Background art."
           className={classes.bgImg}
           src={require(BackgroundImage)}
         />

@@ -161,7 +161,7 @@ const classes = useStyles();
         </Grid>
         <Grid item xs={12}>
           <Grid item container justify='center'>
-            <Button disabled size="large" href="/caseStudies" variant="contained" color="primary">
+            <Button size="large" href="/caseStudies" variant="contained" color="primary">
                My process
              </Button>
           </Grid>
