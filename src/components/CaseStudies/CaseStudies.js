@@ -3,6 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
+import { Link, withRouter } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   root:{
@@ -55,9 +56,11 @@ function CaseStudies(props) {
 
         <Grid item xs={12}>
           <Grid item container justify='center'>
-            <Button size="large" href="/contact" variant="contained" color="primary">
+            <Link to="/Contact">
+            <Button size="large" variant="contained" color="primary">
                Let's talk!
              </Button>
+            </Link>
           </Grid>
         </Grid>
       </Grid>
@@ -65,4 +68,4 @@ function CaseStudies(props) {
   );
 };
 
-export default CaseStudies;
+export default withRouter(CaseStudies);

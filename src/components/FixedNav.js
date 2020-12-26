@@ -7,51 +7,44 @@ import {Link} from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   root:{
-    backgroundColor: theme.palette.bgWhite.main,
-    minHeight: '100vh',
-    display: 'flex',
-    fontSize: 'calc(14px + 2vmin)',
-  },
-  profileImg: {
-    height: '50vmin',
-    maxHeight: '450px',
-    width: 'auto',
-    pointerEvents: 'none',
+    backgroundColor: '#ccc',
+    position: 'absolute',
+    top: '0',
+    right: '0',
+    zIndex: '3', 
   },
   grid: {
-    maxWidht: '100%',
     margin: '0',
-    paddingTop: theme.spacing(8),
+    paddingTop: theme.spacing(2),
   },
 }));
 
-function FixedNav(props) {
+function FixedNav() {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <Grid className={classes.grid} item container alignContent='center'>
-        <Grid item xs={12}>
-          <Grid item>
-            <Link to="/about"><Button size="large" variant="contained" color="primary">
-               About
+      <Grid className={classes.grid} container justify="space-evenly">
+          <Grid item xs>
+            <Link to="/"><Button size="small" variant="contained" color="primary">
+               <Typography>About</Typography>
              </Button></Link>
           </Grid>
-          <Grid item>
-            <Link to="/skills"><Button size="large" variant="contained" color="primary">
-               Skills & Tools
+          <Grid item xs>
+            <Link to="/Skills"><Button size="small" variant="contained" color="primary">
+               <Typography>Skills & Tools</Typography>
              </Button></Link>
           </Grid>
-          <Grid item>
-            <Link to="/caseStudies"><Button size="large" variant="contained" color="primary">
-               Case Studies
+          <Grid item xs>
+            <Link to="/CaseStudies"><Button size="small" variant="contained" color="primary">
+               <Typography>Case Studies</Typography>
              </Button></Link>
           </Grid>
-          <Grid item>
-            <Link to="/contact"><Button size="large" variant="contained" color="primary">
-               Contact
+          <Grid item xs>
+            <Link to="/Contact"><Button size="small" variant="contained" color="primary">
+               <Typography>Contact</Typography>
              </Button></Link>
           </Grid>
-        </Grid>
+
       </Grid>
     </div>
   );

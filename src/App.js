@@ -1,5 +1,4 @@
 import React from 'react';
-import Home from './components/Layout/Home';
 import About from './components/About/About';
 import Skills from './components/Skills/Skills';
 import CaseStudies from './components/CaseStudies/CaseStudies';
@@ -7,22 +6,20 @@ import Contact from './components/Contact/Contact';
 import FixedNav from './components/FixedNav';
 import FoFPage from './components/FoFPage';
 
-import {Route, Switch, Redirect} from 'react-router-dom';
-//import {Route, Router } from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 
 
 export default function App(){
   return (
     <>
-    <FixedNav />
     <Switch>
-      <Redirect exact from="/"  to="/about" />
-      <Route exact path="/about"  component={About} />
+      <Route exact path="/"  component={About} />
       <Route exact path="/skills"  component={Skills} />
       <Route exact path="/caseStudies"  component={CaseStudies} />
       <Route exact path="/contact"  component={Contact} />
       <Route component={FoFPage} />
     </Switch>
+    <FixedNav />
     </>
   );
 }

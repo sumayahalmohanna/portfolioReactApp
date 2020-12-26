@@ -10,7 +10,7 @@ const FoFPage = (props) => {
 
          <Grid item xs={12}>
            <Grid container justify='center'>
-             <Link to="home/about">
+             <Link to="/">
              <Button size="large" variant="contained" color="primary">
                 Back to safety!
               </Button>

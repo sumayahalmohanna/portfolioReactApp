@@ -4,6 +4,7 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Typewriter from 'typewriter-effect';
 import { makeStyles } from '@material-ui/core/styles';
+import { Link, withRouter } from 'react-router-dom';
 
 import ProfilePicture from '../../assets/images/profilePic.svg';
 import BackgroundImage from '../../assets/images/touchOfBlueHills.svg';
@@ -52,7 +53,7 @@ export default function About(){
               <Grid container justify='center'>
                 <img alt="Profile of Sam."
                   className={classes.profileImg}
-                  src={require(ProfilePicture)}
+                  src={ProfilePicture}
                 />
               </Grid>
               <Grid item container className={classes.spacer}></Grid>
@@ -82,16 +83,16 @@ export default function About(){
             <Grid item xs={12}>
               <Grid item container className={classes.spacer}></Grid>
               <Grid container justify='center'>
-                <Button disabled size="large" href="home/skills" variant="contained" color="primary">
+                <Link to="/Skills"><Button size="large" variant="contained" color="primary">
                    Skills & Tools
-                 </Button>
+                 </Button></Link>
               </Grid>
             </Grid>
           </Grid>
         </Grid>
         <img alt="Background art."
           className={classes.bgImg}
-          src={require(BackgroundImage)}
+          src={BackgroundImage}
         />
     </div>
   )
