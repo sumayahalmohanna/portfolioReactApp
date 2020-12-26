@@ -14,9 +14,9 @@ export default function App(){
     <>
     <Switch>
       <Route exact path="/"  component={About} />
-      <Route exact path="/skills"  component={Skills} />
-      <Route exact path="/caseStudies"  component={CaseStudies} />
-      <Route exact path="/contact"  component={Contact} />
+      <Route exact path="/Skills"  component={Skills} />
+      <Route exact path="/CaseStudies"  component={CaseStudies} />
+      <Route exact path="/Contact"  component={Contact} />
       <Route component={FoFPage} />
     </Switch>
     <FixedNav />
@@ -24,14 +24,27 @@ export default function App(){
   );
 }
 
-//<Switch>
-//  <Redirect exact from="/"  to="/home/about" />
-//  <Route exact path="/home/:page?"  render={props => <Home {...props} />} />
-//  <Route render={props => <FoFPage {...props} />} />
-//</Switch>
 
-/* <Router basename='/build'>
+/* 
+<Switch>
+      <Redirect exact from="/"  to="/home/about" />
+      <Route exact path="/home/:page?"  render={props => <Home {...props} />} />
+      <Route render={props => <FoFPage {...props} />} />
+    </Switch>
+
+<Router basename='/build'>
   <Route exact from="/"  to="/home/about" />
   <Route exact path="/home/:page?"  render={props => <Home {...props} />} />
   <Route render={props => <FoFPage {...props} />} />
-</Router> */
+</Router> 
+
+<Switch>
+      <Route exact path="/"  component={About} />
+      <Route exact path="/Skills"  component={Skills} />
+      <Route exact path="/CaseStudies"  component={CaseStudies} />
+      <Route exact path="/Contact"  component={Contact} />
+      <Route component={FoFPage} />
+    </Switch>
+    <FixedNav />
+
+*/

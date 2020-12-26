@@ -3,7 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-import {Link} from 'react-router-dom';
+import {Link, withRouter} from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   root:{
@@ -50,4 +50,4 @@ function FixedNav() {
   );
 };
 
-export default FixedNav;
+export default withRouter(FixedNav);

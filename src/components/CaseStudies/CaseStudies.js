@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function CaseStudies(props) {
+function CaseStudies() {
   const classes = useStyles();
   return (
     <div className={classes.root}>

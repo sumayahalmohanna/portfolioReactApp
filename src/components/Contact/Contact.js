@@ -58,7 +58,7 @@ function MyTextField(props){
   );
 };
 
-function Contact(props) {
+function Contact() {
   const classes = useStyles();
   return (
     <div className={classes.root}>

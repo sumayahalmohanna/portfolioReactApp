@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function About(){
+function About(){
   const classes = useStyles();
   return(
     <div className={classes.root}>
@@ -95,5 +95,7 @@ export default function About(){
           src={BackgroundImage}
         />
     </div>
-  )
-}
+  );
+};
+
+export default withRouter(About);
