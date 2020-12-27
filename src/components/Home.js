@@ -8,11 +8,11 @@ import MenuIcon from '@material-ui/icons/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import Hidden from '@material-ui/core/Hidden';
-import About from '../About/About';
-import Skills from '../Skills/Skills';
-import CaseStudies from '../CaseStudies/CaseStudies';
-import Contact from '../Contact/Contact';
-import FoFPage from '../FoFPage';
+import About from './About';
+import Skills from './Skills';
+import CaseStudies from './CaseStudies';
+import Contact from './Contact';
+import FoFPage from './FoFPage';
 import { makeStyles } from '@material-ui/core/styles';
 import {withRouter} from 'react-router-dom';
 

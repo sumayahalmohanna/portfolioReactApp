@@ -3,9 +3,8 @@ import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-import { Link, withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
-//import bgImg from "../../assets/images/blob4.svg";
 
 const useStyles = makeStyles((theme) => ({
   root:{
@@ -44,7 +43,6 @@ const useStyles = makeStyles((theme) => ({
   },
   listWidth: {
     maxWidth: '600px',
-    //backgroundImage: 'url('+ bgImg+ ')',
   },
 }));
 
@@ -62,7 +60,7 @@ const classes = useStyles();
               <Grid item container justify='center'>
                 <img alt="Profile."
                   className={classes.profileImg}
-                  src={require("../../assets/images/placeHolder.svg" )}
+                  src={require("../assets/images/placeHolder.svg" )}
                 />
               </Grid>
           </Grid>
@@ -121,7 +119,7 @@ const classes = useStyles();
               <Grid item container justify='center'>
                 <img alt="Profile."
                   className={classes.profileImg}
-                  src={require("../../assets/images/placeHolder.svg" )}
+                  src={require("../assets/images/placeHolder.svg" )}
                 />
               </Grid>
           </Grid>
@@ -162,18 +160,16 @@ const classes = useStyles();
         </Grid>
         <Grid item xs={12}>
           <Grid item container justify='center'>
-            <Link to="/CaseStudies">
-            <Button size="large" variant="contained" color="primary">
+            <Button  href="/portfolioReactApp/home/caseStudies" size="large" variant="contained" color="primary">
                My process
              </Button>
-            </Link>
           </Grid>
         </Grid>
         <Grid item container className={classes.spacer}></Grid>
       </Grid>
       <img alt="Background Graphic."
         className={classes.bgImg}
-        src={require("../../assets/images/touchOfBlueHills2.svg" )}
+        src={require("../assets/images/touchOfBlueHills2.svg" )}
       />
     </div>
   );

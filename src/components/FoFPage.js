@@ -3,7 +3,7 @@ import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import { Link, withRouter } from 'react-router-dom';
 
-const FoFPage = (props) => {
+function FoFPage() {
   return (
       <Grid item xs container alignContent='center' justify='center' spacing={2}>
         <p>Page not found</p>

@@ -4,10 +4,10 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Typewriter from 'typewriter-effect';
 import { makeStyles } from '@material-ui/core/styles';
-import { Link, withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
-import ProfilePicture from '../../assets/images/profilePic.svg';
-import BackgroundImage from '../../assets/images/touchOfBlueHills.svg';
+import ProfilePicture from '../assets/images/profilePic.svg';
+import BackgroundImage from '../assets/images/touchOfBlueHills.svg';
 
 const useStyles = makeStyles((theme) => ({
   root:{
@@ -76,16 +76,16 @@ function About(){
                      websites that are fast, responsive, and focused on the users experience
                   </Typography>
                   <Typography className={classes.textBody} variant="body2">This website is still in development.
-                    It will break on page reload and navigating using URL's. This is a simple demo for now.
+                    It is built using React.js, Material-ui, Formik, patience, and love.
                   </Typography>
                 </Grid>
             </Grid>
             <Grid item xs={12}>
               <Grid item container className={classes.spacer}></Grid>
               <Grid container justify='center'>
-                <Link to="/Skills"><Button size="large" variant="contained" color="primary">
+                 <Button href="/portfolioReactApp/home/skills" size="large" variant="contained" color="primary">
                    Skills & Tools
-                 </Button></Link>
+                 </Button>
               </Grid>
             </Grid>
           </Grid>

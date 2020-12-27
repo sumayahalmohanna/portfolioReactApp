@@ -3,7 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-import { Link, withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   root:{
@@ -35,7 +35,7 @@ function CaseStudies() {
               <Grid item container justify='center'>
                 <img alt="Profile."
                   className={classes.profileImg}
-                  src={require("../../assets/images/placeHolder.svg" )}
+                  src={require("../assets/images/placeHolder.svg" )}
                 />
               </Grid>
           </Grid>
@@ -56,11 +56,9 @@ function CaseStudies() {
 
         <Grid item xs={12}>
           <Grid item container justify='center'>
-            <Link to="/Contact">
-            <Button size="large" variant="contained" color="primary">
+            <Button  href="/portfolioReactApp/home/contact" size="large" variant="contained" color="primary">
                Let's talk!
              </Button>
-            </Link>
           </Grid>
         </Grid>
       </Grid>
