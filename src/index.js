@@ -49,12 +49,17 @@ const theme = createMuiTheme({
     h1: {
       fontFamily: "'Merriweather', serif",
       fontWeight: "900",
-      fontSize: "2em",
+      fontSize: "1.9em",
     },
     h2: {
       fontFamily: "'Merriweather', serif",
       fontWeight: "700",
       fontSize: "1.5em",
+    },
+    h3: {
+      fontFamily: "'Merriweather', serif",
+      fontWeight: "700",
+      fontSize: "1em",
     },
     h4: {
       fontFamily: "'Merriweather', serif",

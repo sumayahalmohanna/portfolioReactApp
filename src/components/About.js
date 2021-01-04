@@ -55,7 +55,11 @@ const useStyles = makeStyles((theme) => ({
   customDesignIcon: {
     width: '53px',
     height: 'auto',
-  }
+  },
+  linkBtn: {
+    textDecoration: 'none',
+    marginLeft: theme.spacing(2),
+  },
 }));
 
 function About() {
@@ -69,13 +73,13 @@ function About() {
           <Grid item xs={1} sm={2} xl={3}/>
           <Grid item xs={10} sm={8} xl={6}>
             <Grid item container spacing={2}>
-            <Grid item md={4} sm={12}>
+            <Grid item md={3} sm={12}>
             <img alt="Profile of Sam."
                   className={classes.profileImg}
                   src={ProfilePicture}
                 />
             </Grid>
-            <Grid item md={8} sm={12}>
+            <Grid item md={9} sm={12}>
             <Typography gutterBottom variant="h1">
                   <Typewriter
                     options={{
@@ -89,13 +93,16 @@ function About() {
                 I am passionate about building
                 websites that are fast, responsive, and focused on the users experience
                     </Typography>
-                    <Typography className={classes.textBody} variant="body2">Click here to learn about my process.
                     
-                  <Link to='/home/caseStudies'>
-                    <Button size="large" variant="contained" color="primary">
-                      Case Studies
-                    </Button>
-                  </Link></Typography>
+            </Grid>
+            <Grid item xs={12}>
+            <Typography className={classes.textBody} variant="body1">Click here to learn about my process.
+                    
+                    <Link to='/home/caseStudies' className={classes.linkBtn}>
+                      <Button size="large" variant="contained" color="primary">
+                        Case Studies
+                      </Button>
+                    </Link></Typography>
             </Grid>
             </Grid>
           </Grid>
@@ -131,6 +138,7 @@ function About() {
                           <Grid item xs={6}>
                             <li><Typography variant='body2'>React.js</Typography></li>
                             <li><Typography variant='body2'>Material-UI</Typography></li>
+                            <li><Typography variant='body2'>React-spring</Typography></li>
                             <li><Typography variant='body2'>Formik</Typography></li>
                           </Grid>
                         </Grid>
@@ -139,12 +147,13 @@ function About() {
                       <ul  className={classes.subUL}>
                         <Grid item container>
                           <Grid item xs={6}>
+                            <li><Typography variant='body2'>VSCode</Typography></li>
                             <li><Typography variant='body2'>Atom</Typography></li>
                             <li><Typography variant='body2'>Terminal</Typography></li>
-                            <li><Typography variant='body2'>VSCode</Typography></li>
                           </Grid>
                           <Grid item xs={6}>
                             <li><Typography variant='body2'>Chrome Dev Tools</Typography></li>
+                            <li><Typography variant='body2'>React Dev Tools</Typography></li>
                             <li><Typography variant='body2'>Google</Typography></li>
                           </Grid>
                         </Grid>
@@ -157,7 +166,7 @@ function About() {
                   className={classes.customDesignIcon}
                   src={DesignIcon}
                 />
-                    <Typography variant='h2' gutterBottom className={classes.paperTitle}>Graphic Designer</Typography>
+                    <Typography variant='h3' gutterBottom className={classes.paperTitle}>Graphic Designer</Typography>
                     <Typography variant='body2' gutterBottom>
                       I lean towards human centered design and know the impact good user
                     experience has on any product.</Typography>
