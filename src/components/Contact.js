@@ -6,7 +6,6 @@ import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import { withRouter } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   root:{
@@ -147,4 +146,4 @@ function Contact() {
   );
 };
 
-export default withRouter(Contact);
+export default Contact;

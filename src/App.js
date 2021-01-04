@@ -1,6 +1,11 @@
 import React from 'react';
-import Home from './components/Home';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import About from './components/About';
+import CaseStudies from './components/CaseStudies';
+import Contact from './components/Contact';
 import FoFPage from './components/FoFPage';
+import CssBaseline from '@material-ui/core/CssBaseline';
 
 import {Route, Switch, Redirect, withRouter} from 'react-router-dom';
 
@@ -8,38 +13,18 @@ import {Route, Switch, Redirect, withRouter} from 'react-router-dom';
 function App(){
   return (
     <>
+    <CssBaseline />
+    <Header />
     <Switch>
       <Redirect exact from="/"  to="/home/about" />
-      <Route exact path="/home/:page?"  render={props => <Home {...props} />} />
+      <Route exact path="/home/about"  render={props => <About {...props} />} /> 
+      <Route exact path="/home/caseStudies"  render={props => <CaseStudies {...props} />} /> 
+      <Route exact path="/home/contact"  render={props => <Contact {...props} />} />      
       <Route render={props => <FoFPage {...props} />} />
     </Switch>
+    <Footer />
     </>
   );
 };
 
 export default withRouter(App);
-
-
-/* 
-<Switch>
-      <Redirect exact from="/"  to="/home/about" />
-      <Route exact path="/home/:page?"  render={props => <Home {...props} />} />
-      <Route render={props => <FoFPage {...props} />} />
-    </Switch>
-
-<Router basename='/build'>
-  <Route exact from="/"  to="/home/about" />
-  <Route exact path="/home/:page?"  render={props => <Home {...props} />} />
-  <Route render={props => <FoFPage {...props} />} />
-</Router> 
-
-<Switch>
-      <Route exact path="/"  component={About} />
-      <Route exact path="/Skills"  component={Skills} />
-      <Route exact path="/CaseStudies"  component={CaseStudies} />
-      <Route exact path="/Contact"  component={Contact} />
-      <Route component={FoFPage} />
-    </Switch>
-    <FixedNav />
-
-*/

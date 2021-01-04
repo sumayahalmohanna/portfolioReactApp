@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
-import { Link, withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function FoFPage() {
   return (
@@ -11,9 +11,9 @@ function FoFPage() {
          <Grid item xs={12}>
            <Grid container justify='center'>
              <Link to="/">
-             <Button size="large" variant="contained" color="primary">
-                Back to safety!
-              </Button>
+              <Button size="large" variant="contained" color="primary">
+                  Back to safety!
+                </Button>
              </Link>
            </Grid>
          </Grid>
@@ -21,4 +21,4 @@ function FoFPage() {
   );
 };
 
-export default withRouter(FoFPage);
+export default FoFPage;
