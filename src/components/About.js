@@ -12,7 +12,7 @@ import DesignIcon from '../assets/images/designIcon.svg';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundColor: '#fff',
+    backgroundColor: theme.palette.secondary.main,
     color: '#fff',
     minHeight: '90vh',
     fontSize: 'calc(10px + 2vmin)',
@@ -28,6 +28,8 @@ const useStyles = makeStyles((theme) => ({
   },
   paper: {
     color: theme.palette.secondary.main,
+    //borderRadius: '20px',
+    padding: theme.spacing(3),
   },
   paperTitle: {
     color: theme.palette.primary.main,
@@ -36,24 +38,27 @@ const useStyles = makeStyles((theme) => ({
     listStyleType: 'none',
   },
   spacer: {
+    backgroundColor: '#fff',
     height: '80px',
   },
   blueSpacer: {
     height: '80px',
     backgroundColor: theme.palette.secondary.main,
   },
+  whiteColumn: {
+    backgroundColor: '#fff',
+  },
   heroSection: {
     backgroundColor: theme.palette.secondary.main,
   },
   skillsSection: {
-    backgroundColor: '#fff',
   },
   customWebdevIcon: {
-    width: '85px',
+    maxWidth: '85px',
     height: 'auto',
   },
   customDesignIcon: {
-    width: '53px',
+    maxWidth: '53px',
     height: 'auto',
   },
   linkBtn: {
@@ -111,17 +116,24 @@ function About() {
         {/*end of first column item*/}
 
         <div className={classes.blueSpacer}></div>
-        <div className={classes.blueSpacer}></div>
 
         <Grid item container className={classes.skillsSection}>
-        <Grid item xs={1} sm={2} xl={3}/>
+        <Grid item xs={1} sm={2} xl={3} className={classes.whiteColumn}>
+        <div className={classes.blueSpacer}></div>
+        </Grid>
           <Grid item xs={10} sm={8} xl={6}>
-          <Paper className={classes.paper}>
-            <ul>
-          <img alt="Web dev graphic of a computer by Sam."
+          <Paper className={classes.paper} borderRadius={16}>
+            <Grid container justify='center'>
+              <Grid item md={6} xs={12}>
+              <Grid item>
+              <img alt="Web dev graphic of a computer by Sam."
                   className={classes.customWebdevIcon}
                   src={WebdevIcon}
                 />
+              </Grid>
+              <Grid item>
+              <ul>
+          
                     <Typography variant='h3' gutterBottom className={classes.paperTitle}>Front-end Developer</Typography>
                     <Typography variant='body2' gutterBottom>
                       I am comfortable building from scratch as well as using frameworks
@@ -160,12 +172,18 @@ function About() {
                       </ul>
                   </ul>
             {/*End of web dev section of skills */}
-          
-            <ul>
+            </Grid>
+              </Grid>
+            <Grid item md={6} xs={12}>
+            <Grid item>
             <img alt="Design graphic of a lightbulb by Sam."
                   className={classes.customDesignIcon}
                   src={DesignIcon}
                 />
+            </Grid>
+            <Grid item>
+            <ul>
+            
                     <Typography variant='h3' gutterBottom className={classes.paperTitle}>Graphic Designer</Typography>
                     <Typography variant='body2' gutterBottom>
                       I lean towards human centered design and know the impact good user
@@ -191,9 +209,14 @@ function About() {
                         <li><Typography variant='body2'>Pen & Paper</Typography></li>
                       </ul>
                   </ul>
-                  </Paper>
+              </Grid>
+            </Grid>
+            </Grid>
+          </Paper>
           </Grid>{/*End of skills section content item */}
-          <Grid item xs={1} sm={2} xl={3}/>
+          <Grid item xs={1} sm={2} xl={3} className={classes.whiteColumn}>
+          <div className={classes.blueSpacer}></div>
+          </Grid>
         </Grid>
         
       </Grid>{/*End of main container*/}

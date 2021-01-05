@@ -1,6 +1,5 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import ReactLogo from '../assets/images/ReactJs-Logo.svg';
@@ -13,7 +12,6 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: '#fff',
         color: theme.palette.secondary.main,
         minHeight: 'auto',
-        flexGrow: 1,
         fontSize: 'calc(5px + 1.8vmin)',
         paddingLeft: theme.spacing(6),
         paddingRight: theme.spacing(6),
@@ -40,33 +38,58 @@ function Footer() {
     const classes = useStyles();
     return (
         <div className={classes.root}>
-                <Grid container spacing={1}>
-                    <Grid item sm={6} xs={7}>
+            <Grid container direction='row-reverse'>
+                <Grid item md={6} xs={12}>
+                    <Grid item container direction='column'>
+                        <Grid item>
+                        <Grid container spacing={2}>
+                            <Grid item>
+                            <a className={classes.socialBtns} href="https://www.linkedin.com/in/sumayahalmohanna" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
+                                <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"></path>
+                            </svg></a>
+                            </Grid>
+                            <Grid item>
+                            <a className={classes.socialBtns} href="https://github.com/sumayahalmohanna" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="32   " height="32   " viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
+                            </svg></a>
+                            </Grid>
+                        </Grid>
+                        <Grid container>
+                            <Typography variant='body2' gutterBottom>
+                                © 2015-2021 sumayahdesigns.com</Typography>
+                        </Grid>
+                        </Grid>
+                    </Grid>
+                </Grid>
+                <Grid item md={6} xs={12}>
+                <Grid item container direction='column'>
+                        <Grid item>
+                        <Grid container>
                         <Typography variant='body2' gutterBottom>
                             Coded with <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
                                 <path fillRule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
                             </svg> by Sam Almohanna using:</Typography>
-                        <Grid item lg={4} md={6} sm={8} xs={12}>
-                        <Grid container spacing={1}>
-                        <Grid item xs>
+                        </Grid>
+                        <Grid container spacing={2}>
+                            <Grid item>
                             <img alt="Website was built with React.js"
                             className={classes.builtWith}
                             src={ReactLogo}
                         />
                             </Grid>
-                            <Grid item xs>
+                            <Grid item>
                             <img alt="Website was built with Material-Ui"
                             className={classes.builtWith}
                             src={MaterialUiLogo}
                         />
                             </Grid>
-                            <Grid item xs>
+                            <Grid item>
                             <img alt="Website was built with ReactSpring"
                             className={classes.builtWith}
                             src={ReactSpringLogo}
                         />
                             </Grid>
-                            <Grid item xs>
+                            <Grid item>
                             <img alt="Website was built with Formik"
                             className={classes.builtWith}
                             src={FormikLogo}
@@ -75,32 +98,8 @@ function Footer() {
                         </Grid>
                         </Grid>
                     </Grid>
-                <Grid item container sm={6} xs={7} className={classes.pushRight}>
-                    <Grid item xs>
-                        <Grid item xs>
-                        <Grid item lg={2} md={4} sm={6} xs={8}>
-                        <Grid container spacing={1}>
-                        <Grid item xs>
-                        <a className={classes.socialBtns} href="https://www.linkedin.com/in/sumayahalmohanna" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
-                                <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"></path>
-                            </svg></a>
-                            </Grid>
-                            <Grid item xs>
-                            <a className={classes.socialBtns} href="https://github.com/sumayahalmohanna" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="32   " height="32   " viewBox="0 0 24 24">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
-                            </svg></a>
-                            </Grid>
-                        </Grid>
-                        </Grid>
-                        </Grid>
-                        <Grid item xs>
-                            <Typography variant='body2' gutterBottom>
-                                © 2015-2021 sumayahdesigns.com</Typography>
-                        </Grid>
-                    </Grid>
                 </Grid>
-                
-                </Grid>
+            </Grid>
         </div>
     );
 };
