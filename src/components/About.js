@@ -12,10 +12,11 @@ import DesignIcon from '../assets/images/designIcon.svg';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundColor: theme.palette.secondary.main,
+    backgroundColor: '#fff',
     color: '#fff',
     minHeight: '90vh',
-    fontSize: 'calc(10px + 2vmin)',
+    //fontSize: 'calc(10px + 2vmin)',
+    fontSize: '25px',
   },
   profileImg: {
     maxHeight: '450px',
@@ -33,6 +34,12 @@ const useStyles = makeStyles((theme) => ({
   },
   paperTitle: {
     color: theme.palette.primary.main,
+  },
+  skillsContainer: {
+    padding: theme.spacing(2),
+    [theme.breakpoints.down('sm')]: {
+      padding: theme.spacing(1),
+    }
   },
   subUL: {
     listStyleType: 'none',
@@ -122,10 +129,10 @@ function About() {
         <div className={classes.blueSpacer}></div>
         </Grid>
           <Grid item xs={10} sm={8} xl={6}>
-          <Paper className={classes.paper} borderRadius={16}>
-            <Grid container justify='center'>
-              <Grid item md={6} xs={12}>
-              <Grid item>
+          <Paper className={classes.paper}>
+            <Grid container>
+              <Grid item md={6} xs={12} className={classes.skillsContainer}>
+              <Grid item container justify='center'>
               <img alt="Web dev graphic of a computer by Sam."
                   className={classes.customWebdevIcon}
                   src={WebdevIcon}
@@ -174,8 +181,8 @@ function About() {
             {/*End of web dev section of skills */}
             </Grid>
               </Grid>
-            <Grid item md={6} xs={12}>
-            <Grid item>
+            <Grid item md={6} xs={12} className={classes.skillsContainer}>
+            <Grid item container justify='center'>
             <img alt="Design graphic of a lightbulb by Sam."
                   className={classes.customDesignIcon}
                   src={DesignIcon}

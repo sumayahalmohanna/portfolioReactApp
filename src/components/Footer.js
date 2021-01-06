@@ -12,7 +12,8 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: '#fff',
         color: theme.palette.secondary.main,
         minHeight: 'auto',
-        fontSize: 'calc(5px + 1.8vmin)',
+        //fontSize: 'calc(5px + 1.8vmin)',
+        fontSize: '25px',
         paddingLeft: theme.spacing(6),
         paddingRight: theme.spacing(6),
         paddingTop: theme.spacing(3),
@@ -71,29 +72,37 @@ function Footer() {
                             </svg> by Sam Almohanna using:</Typography>
                         </Grid>
                         <Grid container spacing={2}>
-                            <Grid item>
+                            <Grid item xl={1} xs={2}>
+                            <a className={classes.socialBtns} href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
                             <img alt="Website was built with React.js"
                             className={classes.builtWith}
                             src={ReactLogo}
                         />
+                            </a>
                             </Grid>
-                            <Grid item>
+                            <Grid item xl={1} xs={2}>
+                            <a className={classes.socialBtns} href="https://material-ui.com/" target="_blank" rel="noopener noreferrer">
                             <img alt="Website was built with Material-Ui"
                             className={classes.builtWith}
                             src={MaterialUiLogo}
                         />
+                            </a>
                             </Grid>
-                            <Grid item>
+                            <Grid item xl={1} xs={2}>
+                            <a className={classes.socialBtns} href="https://www.react-spring.io/" target="_blank" rel="noopener noreferrer">
                             <img alt="Website was built with ReactSpring"
                             className={classes.builtWith}
                             src={ReactSpringLogo}
                         />
+                            </a>
                             </Grid>
-                            <Grid item>
+                            <Grid item xl={1} xs={2}>
+                            <a className={classes.socialBtns} href="https://formik.org/" target="_blank" rel="noopener noreferrer">
                             <img alt="Website was built with Formik"
                             className={classes.builtWith}
                             src={FormikLogo}
                         />
+                            </a>
                             </Grid>
                         </Grid>
                         </Grid>
