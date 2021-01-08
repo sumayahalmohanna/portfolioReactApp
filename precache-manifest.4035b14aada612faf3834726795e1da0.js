@@ -1,27 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "645269f56b7f3d043553a97d4a58d9ae",
+    "revision": "a7965b4547397d66fd82a38ed53ea992",
     "url": "/portfolioReactApp/index.html"
   },
   {
-    "revision": "58cf97027ee70417d007",
+    "revision": "3ce915c6c846447d3f89",
     "url": "/portfolioReactApp/static/css/main.fd71e4c9.chunk.css"
   },
   {
-    "revision": "44e38cd8e45958862877",
-    "url": "/portfolioReactApp/static/js/2.eabc1985.chunk.js"
+    "revision": "e209576d575a48323563",
+    "url": "/portfolioReactApp/static/js/2.1efe05fa.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/portfolioReactApp/static/js/2.eabc1985.chunk.js.LICENSE.txt"
+    "url": "/portfolioReactApp/static/js/2.1efe05fa.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "58cf97027ee70417d007",
-    "url": "/portfolioReactApp/static/js/main.217f3d34.chunk.js"
+    "revision": "3ce915c6c846447d3f89",
+    "url": "/portfolioReactApp/static/js/main.1f3eeba1.chunk.js"
   },
   {
     "revision": "228812119fdfa9f53a42",
     "url": "/portfolioReactApp/static/js/runtime-main.d1b1370d.js"
+  },
+  {
+    "revision": "b401d05176238e9e1ed159c247b7efbf",
+    "url": "/portfolioReactApp/static/media/ColorRules.b401d051.png"
+  },
+  {
+    "revision": "2bdb9aa8bfe9ba7c830880529f0cfb87",
+    "url": "/portfolioReactApp/static/media/ColorSwatches.2bdb9aa8.png"
   },
   {
     "revision": "61b32a366e28ed88e445a673204832aa",
