@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/portfolioReactApp/static/css/main.fd71e4c9.chunk.css",
-    "main.js": "/portfolioReactApp/static/js/main.aad3525e.chunk.js",
-    "main.js.map": "/portfolioReactApp/static/js/main.aad3525e.chunk.js.map",
+    "main.js": "/portfolioReactApp/static/js/main.0306e3d2.chunk.js",
+    "main.js.map": "/portfolioReactApp/static/js/main.0306e3d2.chunk.js.map",
     "runtime-main.js": "/portfolioReactApp/static/js/runtime-main.d1b1370d.js",
     "runtime-main.js.map": "/portfolioReactApp/static/js/runtime-main.d1b1370d.js.map",
-    "static/js/2.1efe05fa.chunk.js": "/portfolioReactApp/static/js/2.1efe05fa.chunk.js",
-    "static/js/2.1efe05fa.chunk.js.map": "/portfolioReactApp/static/js/2.1efe05fa.chunk.js.map",
+    "static/js/2.659ae99d.chunk.js": "/portfolioReactApp/static/js/2.659ae99d.chunk.js",
+    "static/js/2.659ae99d.chunk.js.map": "/portfolioReactApp/static/js/2.659ae99d.chunk.js.map",
     "index.html": "/portfolioReactApp/index.html",
-    "precache-manifest.306dde2eb240b79680fd07f106966056.js": "/portfolioReactApp/precache-manifest.306dde2eb240b79680fd07f106966056.js",
+    "precache-manifest.4a89b894835df299202f4a72ce198a1e.js": "/portfolioReactApp/precache-manifest.4a89b894835df299202f4a72ce198a1e.js",
     "service-worker.js": "/portfolioReactApp/service-worker.js",
     "static/css/main.fd71e4c9.chunk.css.map": "/portfolioReactApp/static/css/main.fd71e4c9.chunk.css.map",
-    "static/js/2.1efe05fa.chunk.js.LICENSE.txt": "/portfolioReactApp/static/js/2.1efe05fa.chunk.js.LICENSE.txt",
+    "static/js/2.659ae99d.chunk.js.LICENSE.txt": "/portfolioReactApp/static/js/2.659ae99d.chunk.js.LICENSE.txt",
     "static/media/ColorRules.png": "/portfolioReactApp/static/media/ColorRules.b401d051.png",
     "static/media/ColorSwatches.png": "/portfolioReactApp/static/media/ColorSwatches.2bdb9aa8.png",
     "static/media/Formik-Logo.png": "/portfolioReactApp/static/media/Formik-Logo.61b32a36.png",
@@ -24,8 +24,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.d1b1370d.js",
-    "static/js/2.1efe05fa.chunk.js",
+    "static/js/2.659ae99d.chunk.js",
     "static/css/main.fd71e4c9.chunk.css",
-    "static/js/main.aad3525e.chunk.js"
+    "static/js/main.0306e3d2.chunk.js"
   ]
 }
