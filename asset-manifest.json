@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/portfolioReactApp/static/css/main.fd71e4c9.chunk.css",
-    "main.js": "/portfolioReactApp/static/js/main.0e181202.chunk.js",
-    "main.js.map": "/portfolioReactApp/static/js/main.0e181202.chunk.js.map",
+    "main.js": "/portfolioReactApp/static/js/main.048561f9.chunk.js",
+    "main.js.map": "/portfolioReactApp/static/js/main.048561f9.chunk.js.map",
     "runtime-main.js": "/portfolioReactApp/static/js/runtime-main.d1b1370d.js",
     "runtime-main.js.map": "/portfolioReactApp/static/js/runtime-main.d1b1370d.js.map",
     "static/js/2.c39d06a1.chunk.js": "/portfolioReactApp/static/js/2.c39d06a1.chunk.js",
     "static/js/2.c39d06a1.chunk.js.map": "/portfolioReactApp/static/js/2.c39d06a1.chunk.js.map",
     "index.html": "/portfolioReactApp/index.html",
-    "precache-manifest.234b46dd520082173b2f92e90d68bcda.js": "/portfolioReactApp/precache-manifest.234b46dd520082173b2f92e90d68bcda.js",
+    "precache-manifest.9f9dd2684d183c5578ff5f2235be64ba.js": "/portfolioReactApp/precache-manifest.9f9dd2684d183c5578ff5f2235be64ba.js",
     "service-worker.js": "/portfolioReactApp/service-worker.js",
     "static/css/main.fd71e4c9.chunk.css.map": "/portfolioReactApp/static/css/main.fd71e4c9.chunk.css.map",
     "static/js/2.c39d06a1.chunk.js.LICENSE.txt": "/portfolioReactApp/static/js/2.c39d06a1.chunk.js.LICENSE.txt",
@@ -18,7 +18,7 @@
     "static/media/ReactJs-Logo.svg": "/portfolioReactApp/static/media/ReactJs-Logo.8e26f220.svg",
     "static/media/Step-One.svg": "/portfolioReactApp/static/media/Step-One.d10fa369.svg",
     "static/media/Step-Three.png": "/portfolioReactApp/static/media/Step-Three.248716e0.png",
-    "static/media/Step-Two.svg": "/portfolioReactApp/static/media/Step-Two.418ba567.svg",
+    "static/media/Step-Two.png": "/portfolioReactApp/static/media/Step-Two.5c409d72.png",
     "static/media/designIcon.svg": "/portfolioReactApp/static/media/designIcon.b3df3558.svg",
     "static/media/profilePic.svg": "/portfolioReactApp/static/media/profilePic.f93625d1.svg",
     "static/media/webdevIcon.svg": "/portfolioReactApp/static/media/webdevIcon.8ebd0b3f.svg"
@@ -27,6 +27,6 @@
     "static/js/runtime-main.d1b1370d.js",
     "static/js/2.c39d06a1.chunk.js",
     "static/css/main.fd71e4c9.chunk.css",
-    "static/js/main.0e181202.chunk.js"
+    "static/js/main.048561f9.chunk.js"
   ]
 }
