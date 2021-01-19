@@ -9,7 +9,7 @@ import Menu from '@material-ui/core/Menu';
 import Hidden from '@material-ui/core/Hidden';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
 
@@ -42,6 +42,7 @@ const useStyles = makeStyles((theme) => ({
   title: {
     marginLeft: theme.spacing(3),
     color: '#fff',
+    textDecoration: 'none',
     [theme.breakpoints.down('md')]: {
       flexGrow: 1
     }
@@ -84,9 +85,9 @@ const Header = props => {
     <div className={classes.root}>
       <AppBar className={classes.appBar} position='static'>
             <Toolbar>
-            <Typography variant="h6" className={classes.title}>
+            <Link to='/'  className={classes.title}><Typography variant="h6">
             Sam Almohanna
-          </Typography>
+          </Typography></Link>
           <Hidden mdUp>
               <IconButton edge="end" className={classes.menuIcon} onClick={handleMenu} color="inherit" aria-label="menu">
                 <MenuIcon />

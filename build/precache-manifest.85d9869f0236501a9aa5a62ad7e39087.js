@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3fa4f33ca398db12a4b01d402b795167",
+    "revision": "b3a8ccb4f1d2d1633686adea7220fe3d",
     "url": "/portfolioReactApp/index.html"
   },
   {
-    "revision": "10d8439ef339e0a8852c",
-    "url": "/portfolioReactApp/static/css/main.51b86f4f.chunk.css"
+    "revision": "85c689d7abcb8b6bf569",
+    "url": "/portfolioReactApp/static/css/main.fd71e4c9.chunk.css"
   },
   {
-    "revision": "4f79a20c2a95d2fd06ae",
-    "url": "/portfolioReactApp/static/js/2.86698565.chunk.js"
+    "revision": "867cfa141d28f122a76e",
+    "url": "/portfolioReactApp/static/js/2.cef7b538.chunk.js"
   },
   {
-    "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/portfolioReactApp/static/js/2.86698565.chunk.js.LICENSE.txt"
+    "revision": "8192316cc1b6786565c9dca5c2c59331",
+    "url": "/portfolioReactApp/static/js/2.cef7b538.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "10d8439ef339e0a8852c",
-    "url": "/portfolioReactApp/static/js/main.c651ecff.chunk.js"
+    "revision": "85c689d7abcb8b6bf569",
+    "url": "/portfolioReactApp/static/js/main.d99a9c82.chunk.js"
   },
   {
     "revision": "228812119fdfa9f53a42",
@@ -38,6 +38,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8e26f22094a11f6a689d8302dc30782c",
     "url": "/portfolioReactApp/static/media/ReactJs-Logo.8e26f220.svg"
+  },
+  {
+    "revision": "d10fa369e51bb9b44703d6cf26101220",
+    "url": "/portfolioReactApp/static/media/Step-One.d10fa369.svg"
+  },
+  {
+    "revision": "248716e0cb31a611e0e6343f755b79be",
+    "url": "/portfolioReactApp/static/media/Step-Three.248716e0.png"
+  },
+  {
+    "revision": "5c409d726a2b086e37ae573018190eb6",
+    "url": "/portfolioReactApp/static/media/Step-Two.5c409d72.png"
   },
   {
     "revision": "b3df3558067caa6eb442099e7e851bbb",

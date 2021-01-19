@@ -19,7 +19,7 @@ const theme = createMuiTheme({
       dark: "#1e4d79",
       contrastText: "#d7dfe4",
     },
-    bgWhite: {
+    bgGrey: {
       light: "#d7dfe4",
       main: "#d7dfe4",
       dark: "#d7dfe4",
@@ -71,6 +71,7 @@ const theme = createMuiTheme({
       fontWeight: "400",
       fontSize: ".8em",
       lineHeight: "1.5",
+      maxWidth: "650px",
     },
     body2: {
       fontFamily: "'Roboto', sans-serif",

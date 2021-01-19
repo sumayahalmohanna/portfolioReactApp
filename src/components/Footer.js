@@ -23,6 +23,14 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         flex: 1,
         justifyContent: 'flex-end',
+        [theme.breakpoints.down('sm')]: {
+            justifyContent: 'center',
+          }
+    },
+    centerSm: {
+        [theme.breakpoints.down('sm')]: {
+            justifyContent: 'center',
+          }
     },
     builtWith: {
         maxWidth: '38px',
@@ -39,11 +47,11 @@ function Footer() {
     const classes = useStyles();
     return (
         <div className={classes.root}>
-            <Grid container direction='row-reverse'>
+            <Grid container direction='row-reverse' spacing={2}>
                 <Grid item md={6} xs={12}>
-                    <Grid item container direction='column'>
+                    <Grid item container direction='column' spacing={1}>
                         <Grid item>
-                        <Grid container spacing={2}>
+                        <Grid container spacing={2} className={classes.pushRight}>
                             <Grid item>
                             <a className={classes.socialBtns} href="https://www.linkedin.com/in/sumayahalmohanna" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
                                 <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"></path>
@@ -55,7 +63,9 @@ function Footer() {
                             </svg></a>
                             </Grid>
                         </Grid>
-                        <Grid container>
+                        </Grid>
+                        <Grid item>
+                        <Grid container className={classes.pushRight}>
                             <Typography variant='body2' gutterBottom>
                                 © 2015-2021 sumayahdesigns.com</Typography>
                         </Grid>
@@ -63,15 +73,9 @@ function Footer() {
                     </Grid>
                 </Grid>
                 <Grid item md={6} xs={12}>
-                <Grid item container direction='column'>
+                <Grid item container direction='column' spacing={1}>
                         <Grid item>
-                        <Grid container>
-                        <Typography variant='body2' gutterBottom>
-                            Coded with <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
-                                <path fillRule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
-                            </svg> by Sam Almohanna using:</Typography>
-                        </Grid>
-                        <Grid container spacing={2}>
+                        <Grid container spacing={2} className={classes.centerSm}>
                             <Grid item xl={1} xs={2}>
                             <a className={classes.socialBtns} href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
                             <img alt="Website was built with React.js"
@@ -104,6 +108,14 @@ function Footer() {
                         />
                             </a>
                             </Grid>
+                        </Grid>
+                        </Grid>
+                        <Grid item>
+                        <Grid container className={classes.centerSm}>
+                        <Typography variant='body2' gutterBottom>
+                            Coded with <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                                <path fillRule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                            </svg> by Sam Almohanna</Typography>
                         </Grid>
                         </Grid>
                     </Grid>

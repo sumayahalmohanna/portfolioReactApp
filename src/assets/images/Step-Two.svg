@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 3915 1282" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(4.16667,0,0,4.16667,-285.868,-2753.21)">
+        <g transform="matrix(1,0,0,0.864026,0,89.8474)">
+            <rect x="655" y="660.771" width="353" height="75.229" style="fill:rgb(44,110,174);"/>
+        </g>
+        <g transform="matrix(1,0,0,0.824148,0,200.427)">
+            <rect x="655" y="660.771" width="353" height="75.229" style="fill:rgb(224,201,3);"/>
+        </g>
+        <g transform="matrix(1,0,0,0.824148,0,281.283)">
+            <rect x="655" y="660.771" width="353" height="75.229" style="fill:rgb(11,14,19);"/>
+        </g>
+        <g transform="matrix(1,0,0,0.824148,0,361.799)">
+            <rect x="655" y="660.771" width="353" height="75.229" style="fill:rgb(204,219,225);"/>
+        </g>
+        <g transform="matrix(1.2362,0,0,1.2362,-35.3354,-250.043)">
+            <g transform="matrix(1,0,0,1,-52.6729,117)">
+                <text x="136.708px" y="659.146px" style="font-family:'Merriweather-Black', 'Merriweather';font-weight:900;font-size:48px;">Merriweather</text>
+            </g>
+            <g transform="matrix(1,0,0,1,-52.0009,178)">
+                <text x="136.708px" y="659.146px" style="font-family:'Merriweather-Regular', 'Merriweather';font-size:48px;">Aa</text>
+            </g>
+            <g transform="matrix(1,0,0,1,-54,265)">
+                <text x="136.708px" y="659.146px" style="font-family:'Roboto-Regular', 'Roboto';font-size:48px;">Robot<tspan x="263.153px " y="659.146px ">o</tspan></text>
+            </g>
+            <g transform="matrix(1,0,0,1,-53.328,326)">
+                <text x="136.708px" y="659.146px" style="font-family:'Roboto-Light', 'Roboto';font-weight:300;font-size:48px;">Aa</text>
+            </g>
+            <g transform="matrix(0.672923,0,0,0.672923,495.58,331.003)">
+                <text x="136.708px" y="659.146px" style="font-family:'Roboto-Light', 'Roboto';font-weight:300;font-size:48px;fill:white;">#2C6EAE</text>
+            </g>
+            <g transform="matrix(0.672923,0,0,0.672923,495.58,397.926)">
+                <text x="136.708px" y="659.146px" style="font-family:'Roboto-Light', 'Roboto';font-weight:300;font-size:48px;fill:rgb(11,14,19);">#E0C903</text>
+            </g>
+            <g transform="matrix(0.672923,0,0,0.672923,495.58,463.332)">
+                <text x="136.708px" y="659.146px" style="font-family:'Roboto-Light', 'Roboto';font-weight:300;font-size:48px;fill:white;">#0C0E14</text>
+            </g>
+            <g transform="matrix(0.672923,0,0,0.672923,495.58,528.465)">
+                <text x="136.708px" y="659.146px" style="font-family:'Roboto-Light', 'Roboto';font-weight:300;font-size:48px;fill:rgb(38,110,174);">#CCDBE1</text>
+            </g>
+        </g>
+    </g>
+</svg>
