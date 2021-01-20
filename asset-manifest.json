@@ -1,21 +1,22 @@
 {
   "files": {
     "main.css": "/portfolioReactApp/static/css/main.fd71e4c9.chunk.css",
-    "main.js": "/portfolioReactApp/static/js/main.db5e026e.chunk.js",
-    "main.js.map": "/portfolioReactApp/static/js/main.db5e026e.chunk.js.map",
+    "main.js": "/portfolioReactApp/static/js/main.f403847f.chunk.js",
+    "main.js.map": "/portfolioReactApp/static/js/main.f403847f.chunk.js.map",
     "runtime-main.js": "/portfolioReactApp/static/js/runtime-main.d1b1370d.js",
     "runtime-main.js.map": "/portfolioReactApp/static/js/runtime-main.d1b1370d.js.map",
-    "static/js/2.00ffb95f.chunk.js": "/portfolioReactApp/static/js/2.00ffb95f.chunk.js",
-    "static/js/2.00ffb95f.chunk.js.map": "/portfolioReactApp/static/js/2.00ffb95f.chunk.js.map",
+    "static/js/2.c5495d9c.chunk.js": "/portfolioReactApp/static/js/2.c5495d9c.chunk.js",
+    "static/js/2.c5495d9c.chunk.js.map": "/portfolioReactApp/static/js/2.c5495d9c.chunk.js.map",
     "index.html": "/portfolioReactApp/index.html",
-    "precache-manifest.27ffb0c3a0a1aab7fc29fd63cb79a328.js": "/portfolioReactApp/precache-manifest.27ffb0c3a0a1aab7fc29fd63cb79a328.js",
+    "precache-manifest.dcfed89e7b742abc1030fc96921a3ee6.js": "/portfolioReactApp/precache-manifest.dcfed89e7b742abc1030fc96921a3ee6.js",
     "service-worker.js": "/portfolioReactApp/service-worker.js",
     "static/css/main.fd71e4c9.chunk.css.map": "/portfolioReactApp/static/css/main.fd71e4c9.chunk.css.map",
-    "static/js/2.00ffb95f.chunk.js.LICENSE.txt": "/portfolioReactApp/static/js/2.00ffb95f.chunk.js.LICENSE.txt",
+    "static/js/2.c5495d9c.chunk.js.LICENSE.txt": "/portfolioReactApp/static/js/2.c5495d9c.chunk.js.LICENSE.txt",
     "static/media/Formik-Logo.png": "/portfolioReactApp/static/media/Formik-Logo.61b32a36.png",
     "static/media/MaterialUi-Logo.svg": "/portfolioReactApp/static/media/MaterialUi-Logo.cb2f65a2.svg",
     "static/media/React-Spring-Logo.png": "/portfolioReactApp/static/media/React-Spring-Logo.4826d447.png",
     "static/media/ReactJs-Logo.svg": "/portfolioReactApp/static/media/ReactJs-Logo.8e26f220.svg",
+    "static/media/Step-Four.png": "/portfolioReactApp/static/media/Step-Four.f9119f21.png",
     "static/media/Step-One.svg": "/portfolioReactApp/static/media/Step-One.d10fa369.svg",
     "static/media/Step-Three.png": "/portfolioReactApp/static/media/Step-Three.248716e0.png",
     "static/media/Step-Two.png": "/portfolioReactApp/static/media/Step-Two.5c409d72.png",
@@ -25,8 +26,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.d1b1370d.js",
-    "static/js/2.00ffb95f.chunk.js",
+    "static/js/2.c5495d9c.chunk.js",
     "static/css/main.fd71e4c9.chunk.css",
-    "static/js/main.db5e026e.chunk.js"
+    "static/js/main.f403847f.chunk.js"
   ]
 }
