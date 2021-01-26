@@ -94,8 +94,8 @@ function About() {
               <Grid item md={3} sm={12}>
                 <Spring
                   config={config.wobbly}
-                  from={{ opacity: 0, marginLeft: -1000 }}
-                  to={{ opacity: 1, marginLeft: 0 }}
+                  from={{ opacity: 0, marginTop: -400 }}
+                  to={{ opacity: 1, marginTop: 0 }}
                   delay={500}
                 >
                   {(props) => (
@@ -125,8 +125,8 @@ function About() {
                 <Typography variant="body1">
                   I am a Front-end Developer and Designer with 6 years
                   experience building websites that are fast, responsive, and
-                  focused on UX. My programing background is complemented by my
-                  eye for design, enabling me to see a project though every
+                  focused on UX. My programming background is complemented by my
+                  eye for design, enabling me to see a project through every
                   stage of production. My problem solving skills make me an
                   asset to any team and I enjoy taking on new challenges.
                 </Typography>
@@ -176,7 +176,7 @@ function About() {
               items={show}
               from={{ opacity: 0 }}
               enter={{ opacity: 1 }}
-              delay={200}
+              delay={400}
             >
               {(show) =>
                 show &&
@@ -190,188 +190,235 @@ function About() {
           </Grid>
           <Grid item xs={10} sm={8} xl={6}>
             <Paper className={classes.paper} elevation={3}>
-              <Grid container>
-                <Grid item md={6} xs={12} className={classes.skillsContainer}>
-                  <Grid item container justify="center">
-                    <img
-                      alt="Web dev graphic of a computer by Sam."
-                      className={classes.customWebdevIcon}
-                      src={WebdevIcon}
-                    />
-                  </Grid>
-                  <Grid item>
-                    <ul>
-                      <Typography
-                        variant="h3"
-                        gutterBottom
-                        className={classes.paperTitle}
-                      >
-                        Front-end Developer
-                      </Typography>
-                      <Typography variant="body2" gutterBottom>
-                        I am comfortable building from scratch as well as using
-                        frameworks and libraries when needed.
-                      </Typography>
-                      <Typography variant="h4" gutterBottom>
-                        My Languages and Frameworks:
-                      </Typography>
-                      <ul className={classes.subUL}>
-                        <Grid item container>
-                          <Grid item xs={6}>
-                            <li>
-                              <Typography variant="body2">HTML5</Typography>
-                            </li>
-                            <li>
-                              <Typography variant="body2">
-                                Javascript
-                              </Typography>
-                            </li>
-                            <li>
-                              <Typography variant="body2">CSS3</Typography>
-                            </li>
-                            <li>
-                              <Typography variant="body2">Bootstrap</Typography>
-                            </li>
+              <Transition
+                items={show}
+                from={{ opacity: 0 }}
+                enter={{ opacity: 1 }}
+                delay={600}
+              >
+                {(show) =>
+                  show &&
+                  ((props) => (
+                    <div style={props}>
+                      <Grid container>
+                        <Grid
+                          item
+                          md={6}
+                          xs={12}
+                          className={classes.skillsContainer}
+                        >
+                          <Grid item container justify="center">
+                            <img
+                              alt="Web dev graphic of a computer by Sam."
+                              className={classes.customWebdevIcon}
+                              src={WebdevIcon}
+                            />
                           </Grid>
-                          <Grid item xs={6}>
-                            <li>
-                              <Typography variant="body2">React.js</Typography>
-                            </li>
-                            <li>
-                              <Typography variant="body2">
-                                Material-UI
+                          <Grid item>
+                            <ul>
+                              <Typography
+                                variant="h3"
+                                gutterBottom
+                                className={classes.paperTitle}
+                              >
+                                Front-end Developer
                               </Typography>
-                            </li>
-                            <li>
-                              <Typography variant="body2">
-                                React-spring
+                              <Typography variant="body2" gutterBottom>
+                                I am comfortable building from scratch as well
+                                as using frameworks and libraries when needed.
                               </Typography>
-                            </li>
-                            <li>
-                              <Typography variant="body2">Formik</Typography>
-                            </li>
-                          </Grid>
-                        </Grid>
-                      </ul>
-                      <Typography variant="h4" gutterBottom>
-                        My Development Tools:
-                      </Typography>
-                      <ul className={classes.subUL}>
-                        <Grid item container>
-                          <Grid item xs={6}>
-                            <li>
-                              <Typography variant="body2">VSCode</Typography>
-                            </li>
-                            <li>
-                              <Typography variant="body2">Atom</Typography>
-                            </li>
-                            <li>
-                              <Typography variant="body2">Terminal</Typography>
-                            </li>
-                          </Grid>
-                          <Grid item xs={6}>
-                            <li>
-                              <Typography variant="body2">
-                                Chrome Dev Tools
+                              <Typography variant="h4" gutterBottom>
+                                My Languages and Frameworks:
                               </Typography>
-                            </li>
-                            <li>
-                              <Typography variant="body2">
-                                React Dev Tools
+                              <ul className={classes.subUL}>
+                                <Grid item container>
+                                  <Grid item xs={6}>
+                                    <li>
+                                      <Typography variant="body2">
+                                        HTML5
+                                      </Typography>
+                                    </li>
+                                    <li>
+                                      <Typography variant="body2">
+                                        Javascript
+                                      </Typography>
+                                    </li>
+                                    <li>
+                                      <Typography variant="body2">
+                                        CSS3
+                                      </Typography>
+                                    </li>
+                                    <li>
+                                      <Typography variant="body2">
+                                        Bootstrap
+                                      </Typography>
+                                    </li>
+                                  </Grid>
+                                  <Grid item xs={6}>
+                                    <li>
+                                      <Typography variant="body2">
+                                        React.js
+                                      </Typography>
+                                    </li>
+                                    <li>
+                                      <Typography variant="body2">
+                                        Material-UI
+                                      </Typography>
+                                    </li>
+                                    <li>
+                                      <Typography variant="body2">
+                                        React-spring
+                                      </Typography>
+                                    </li>
+                                    <li>
+                                      <Typography variant="body2">
+                                        Formik
+                                      </Typography>
+                                    </li>
+                                  </Grid>
+                                </Grid>
+                              </ul>
+                              <Typography variant="h4" gutterBottom>
+                                My Development Tools:
                               </Typography>
-                            </li>
-                            <li>
-                              <Typography variant="body2">Google</Typography>
-                            </li>
-                          </Grid>
-                        </Grid>
-                      </ul>
-                    </ul>
-                    {/*End of web dev section of skills */}
-                  </Grid>
-                </Grid>
-                <Grid item md={6} xs={12} className={classes.skillsContainer}>
-                  <Grid item container justify="center">
-                    <img
-                      alt="Design graphic of a lightbulb by Sam."
-                      className={classes.customDesignIcon}
-                      src={DesignIcon}
-                    />
-                  </Grid>
-                  <Grid item>
-                    <ul>
-                      <Typography
-                        variant="h3"
-                        gutterBottom
-                        className={classes.paperTitle}
-                      >
-                        Graphic Designer
-                      </Typography>
-                      <Typography variant="body2" gutterBottom>
-                        I lean towards human centered design and know the impact
-                        good user experience has on any product.
-                      </Typography>
-                      <Typography variant="h4" gutterBottom>
-                        My Areas of Interest:
-                      </Typography>
-                      <ul className={classes.subUL}>
-                        <Grid item container>
-                          <Grid item xs={6}>
-                            <li>
-                              <Typography variant="body2">
-                                Web Design
-                              </Typography>
-                            </li>
-                            <li>
-                              <Typography variant="body2">UX Design</Typography>
-                            </li>
-                          </Grid>
-                          <Grid item xs={6}>
-                            <li>
-                              <Typography variant="body2">
-                                App Design
-                              </Typography>
-                            </li>
-                            <li>
-                              <Typography variant="body2">
-                                Mobile first Design
-                              </Typography>
-                            </li>
+                              <ul className={classes.subUL}>
+                                <Grid item container>
+                                  <Grid item xs={6}>
+                                    <li>
+                                      <Typography variant="body2">
+                                        VSCode
+                                      </Typography>
+                                    </li>
+                                    <li>
+                                      <Typography variant="body2">
+                                        Atom
+                                      </Typography>
+                                    </li>
+                                    <li>
+                                      <Typography variant="body2">
+                                        Terminal
+                                      </Typography>
+                                    </li>
+                                  </Grid>
+                                  <Grid item xs={6}>
+                                    <li>
+                                      <Typography variant="body2">
+                                        Chrome Dev Tools
+                                      </Typography>
+                                    </li>
+                                    <li>
+                                      <Typography variant="body2">
+                                        React Dev Tools
+                                      </Typography>
+                                    </li>
+                                    <li>
+                                      <Typography variant="body2">
+                                        Google
+                                      </Typography>
+                                    </li>
+                                  </Grid>
+                                </Grid>
+                              </ul>
+                            </ul>
+                            {/*End of web dev section of skills */}
                           </Grid>
                         </Grid>
-                      </ul>
-                      <Typography variant="h4" gutterBottom>
-                        My Design Tools:
-                      </Typography>
-                      <ul className={classes.subUL}>
-                        <li>
-                          <Typography variant="body2">
-                            Adobe Design Suite
-                          </Typography>
-                        </li>
-                        <li>
-                          <Typography variant="body2">
-                            Affinity Designer (Illustrator)
-                          </Typography>
-                        </li>
-                        <li>
-                          <Typography variant="body2">
-                            Affinity Photo (Photo Editing)
-                          </Typography>
-                        </li>
-                        <li>
-                          <Typography variant="body2">
-                            Affinity Publisher (Layout Design)
-                          </Typography>
-                        </li>
-                        <li>
-                          <Typography variant="body2">Pen & Paper</Typography>
-                        </li>
-                      </ul>
-                    </ul>
-                  </Grid>
-                </Grid>
-              </Grid>
+                        <Grid
+                          item
+                          md={6}
+                          xs={12}
+                          className={classes.skillsContainer}
+                        >
+                          <Grid item container justify="center">
+                            <img
+                              alt="Design graphic of a lightbulb by Sam."
+                              className={classes.customDesignIcon}
+                              src={DesignIcon}
+                            />
+                          </Grid>
+                          <Grid item>
+                            <ul>
+                              <Typography
+                                variant="h3"
+                                gutterBottom
+                                className={classes.paperTitle}
+                              >
+                                Graphic Designer
+                              </Typography>
+                              <Typography variant="body2" gutterBottom>
+                                I lean towards human centered design and know
+                                the impact good user experience has on any
+                                product.
+                              </Typography>
+                              <Typography variant="h4" gutterBottom>
+                                My Areas of Interest:
+                              </Typography>
+                              <ul className={classes.subUL}>
+                                <Grid item container>
+                                  <Grid item xs={6}>
+                                    <li>
+                                      <Typography variant="body2">
+                                        Web Design
+                                      </Typography>
+                                    </li>
+                                    <li>
+                                      <Typography variant="body2">
+                                        UX Design
+                                      </Typography>
+                                    </li>
+                                  </Grid>
+                                  <Grid item xs={6}>
+                                    <li>
+                                      <Typography variant="body2">
+                                        App Design
+                                      </Typography>
+                                    </li>
+                                    <li>
+                                      <Typography variant="body2">
+                                        Mobile first Design
+                                      </Typography>
+                                    </li>
+                                  </Grid>
+                                </Grid>
+                              </ul>
+                              <Typography variant="h4" gutterBottom>
+                                My Design Tools:
+                              </Typography>
+                              <ul className={classes.subUL}>
+                                <li>
+                                  <Typography variant="body2">
+                                    Adobe Design Suite
+                                  </Typography>
+                                </li>
+                                <li>
+                                  <Typography variant="body2">
+                                    Affinity Designer (Illustrator)
+                                  </Typography>
+                                </li>
+                                <li>
+                                  <Typography variant="body2">
+                                    Affinity Photo (Photo Editing)
+                                  </Typography>
+                                </li>
+                                <li>
+                                  <Typography variant="body2">
+                                    Affinity Publisher (Layout Design)
+                                  </Typography>
+                                </li>
+                                <li>
+                                  <Typography variant="body2">
+                                    Pen & Paper
+                                  </Typography>
+                                </li>
+                              </ul>
+                            </ul>
+                          </Grid>
+                        </Grid>
+                      </Grid>
+                    </div>
+                  ))
+                }
+              </Transition>
             </Paper>
           </Grid>
           {/*End of skills section content item */}
@@ -380,7 +427,7 @@ function About() {
               items={show}
               from={{ opacity: 0 }}
               enter={{ opacity: 1 }}
-              delay={200}
+              delay={400}
             >
               {(show) =>
                 show &&

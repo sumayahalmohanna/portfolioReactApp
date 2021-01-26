@@ -6,9 +6,7 @@ import CaseStudies from './components/CaseStudies';
 import Contact from './components/Contact';
 import FoFPage from './components/FoFPage';
 import CssBaseline from '@material-ui/core/CssBaseline';
-
 import {Route, Switch, Redirect, withRouter} from 'react-router-dom';
-
 
 function App(){
   return (
@@ -19,8 +17,9 @@ function App(){
       <Redirect exact from="/"  to="/home/about" />
       <Route exact path="/home/about"  render={props => <About {...props} />} /> 
       <Route exact path="/home/caseStudies"  render={props => <CaseStudies {...props} />} /> 
-      <Route exact path="/home/contact"  render={props => <Contact {...props} />} />      
+      <Route exact path="/home/contact"  render={props => <Contact {...props} />} />     
       <Route render={props => <FoFPage {...props} />} />
+      {window.scrollTo(0, 0)}
     </Switch>
     <Footer />
     </>

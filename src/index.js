@@ -1,9 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
-import {BrowserRouter as Router} from 'react-router-dom';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
+import { BrowserRouter as Router } from "react-router-dom";
 
 const theme = createMuiTheme({
   palette: {
@@ -87,13 +87,11 @@ const theme = createMuiTheme({
 });
 
 const app = (
-    <Router basename="/portfolioReactApp">
-      <ThemeProvider theme={theme}>
-        <App />
+  <Router basename="/portfolioReactApp">
+    <ThemeProvider theme={theme}>
+      <App />
     </ThemeProvider>
-    </Router>
+  </Router>
 );
 
-ReactDOM.render(app,
-  document.getElementById('root')
-);
+ReactDOM.render(app, document.getElementById("root"));
