@@ -87,7 +87,7 @@ const theme = createMuiTheme({
 });
 
 const app = (
-  <Router basename="/portfolioReactApp">
+  <Router>
     <ThemeProvider theme={theme}>
       <App />
     </ThemeProvider>

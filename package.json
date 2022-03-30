@@ -1,5 +1,5 @@
 {
-  "homepage": "https://sumayahalmohanna.github.io/portfolioReactApp",
+  "homepage": "http://www.sumayahdesigns.com",
   "name": "portfoliowebsite",
   "version": "0.1.0",
   "private": true,
@@ -13,6 +13,7 @@
     "formik-material-ui": "^3.0.0",
     "react": "^16.14.0",
     "react-dom": "^17.0.1",
+    "react-ga": "^3.3.0",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",

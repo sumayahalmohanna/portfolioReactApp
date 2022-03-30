@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import About from './components/About';
@@ -6,9 +6,21 @@ import CaseStudies from './components/CaseStudies';
 import Contact from './components/Contact';
 import FoFPage from './components/FoFPage';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import {Route, Switch, Redirect, withRouter} from 'react-router-dom';
+import {Route, Switch, Redirect, withRouter, useLocation} from 'react-router-dom';
+import ReactGA from 'react-ga';
+
+
+function usePageViews() {
+  let location = useLocation();
+  useEffect(() => {
+    ReactGA.initialize('UA-199288730-1');
+    ReactGA.set({page: location.pathname});
+    ReactGA.pageview(location.pathname);
+  }, [location]);
+}
 
 function App(){
+  usePageViews();
   return (
     <>
     <CssBaseline />

@@ -4,9 +4,10 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import TextField from "@material-ui/core/TextField";
 import { makeStyles } from "@material-ui/core/styles";
-//import LinearProgress from '@material-ui/core/LinearProgress';
+import LinearProgress from '@material-ui/core/LinearProgress';
 import { useFormik } from "formik";
 import * as Yup from "yup";
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -37,6 +38,10 @@ const useStyles = makeStyles((theme) => ({
       top: -24,
     },
   },
+  formTextField: {
+    color: '#fff',
+    backgroundColor: 'yellow',
+  }
 }));
 
 const validationSchema = Yup.object({
@@ -57,30 +62,28 @@ function Contact() {
     initialValues: { name: "", email: "", message: "" },
     validationSchema: validationSchema,
     onSubmit: (values) => {
-      setTimeout(() => {
-        //console.log(values);
         //create new xmlhttprequest
         var xhr = new XMLHttpRequest();
         //get a callback when the server responds
         xhr.addEventListener("load", () => {
           //update email status with response
-          console.log(xhr.responseText);
+         // console.log('xhr response: ' + xhr.responseText);
         });
 
         xhr.open(
           "GET",
-          "http://localhost:3000/sendemail/index.php?sendto=" +
+          "http://www.sumayahdesigns.com/sendemail/index.php?sendto=" +
             values.email +
             "&name=" +
             values.name +
             "&message=" +
-            values.message
+            values.message, true
         );
+        //console.log('Values: ' + values.email + ' ' + values.name + ' ' + values.message);
         xhr.send();
-      }, 1000);
+        formik.resetForm();
     },
   });
-  console.log("Form values: ", formik.values);
   return (
     <div className={classes.root}>
       <div className={classes.spacer}></div>
@@ -114,13 +117,15 @@ function Contact() {
               <Grid item xs={12}>
                 <Grid container direction="column">
                   <Grid item xs>
-                    <Grid item container>
+                    <Grid item container spacing={3}>
+                      <LinearProgress />
                       <form
                         onSubmit={formik.handleSubmit}
                         className={classes.form}
                       >
                         <Grid item xs={12}>
                           <TextField
+                            inputProps={{style: {color: '#fff'},}}
                             name="name"
                             id="name"
                             label="Full Name"
@@ -136,6 +141,7 @@ function Contact() {
                         </Grid>
                         <Grid item xs={12}>
                           <TextField
+                            inputProps={{style: {color: '#fff'},}}
                             name="email"
                             type="email"
                             label="Email"
@@ -152,6 +158,7 @@ function Contact() {
                         </Grid>
                         <Grid item xs={12}>
                           <TextField
+                            inputProps={{style: {color: '#fff'},}}
                             name="message"
                             id="message"
                             multiline

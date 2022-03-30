@@ -107,7 +107,7 @@ function CaseStudies() {
                   variant="h1"
                   className={classes.heroTitle}
                 >
-                  Protfolio Website
+                  Portfolio Website
                 </Typography>
                 <div className={classes.spacer}></div>
                 <Typography variant="body1">
@@ -218,6 +218,54 @@ function CaseStudies() {
           <Grid item xs={1} sm={2} xl={3} />
         </Grid>
         {/**End of Contact button section */}
+        <div className={classes.spacer}></div>
+        <div className={classes.spacer}></div>
+
+        {/* <Grid item container className={classes.heroSection}>
+          <Grid item xs={1} sm={2} xl={3} />
+          <Grid item xs={10} sm={8} xl={6}>
+            <Grid item container spacing={2}>
+              <Grid item md={9} sm={12}>
+                <Typography
+                  gutterBottom
+                  variant="h1"
+                  className={classes.heroTitle}
+                >
+                 React Weather App
+                </Typography>
+                <div className={classes.spacer}></div>
+                <Typography variant="body1">
+                  Live Demo: <a href="https://sumayahalmohanna.github.io/React-Weather-App/" target="_blank" rel="noopener noreferrer">Sam's Weather App built with Reactjs</a>
+                </Typography>
+                <Typography variant="body1">
+                  I built a simple weather app using React.js and Sass. I have family and friends who
+                  live in different countries and sometimes I like to check what their weather is like.
+                  My goals for making this app were:
+                </Typography>
+                <ul>
+                  <li>
+                    <Typography variant="body1">
+                      Have a minimalist UI that is right to the point.
+                    </Typography>
+                  </li>
+                  <li>
+                    <Typography variant="body1">
+                      Quickly switch between temprature units.
+                    </Typography>
+                  </li>
+                  <li>
+                    <Typography variant="body1">
+                      No ads!
+                    </Typography>
+                  </li>
+                </ul>
+                <div className={classes.spacer}></div>
+              </Grid>
+              <Grid item md={3} sm={12} />
+            </Grid>
+          </Grid>
+          <Grid item xs={1} sm={2} xl={3} />
+      </Grid> */}
       </Grid>
       {/*End of main container*/}
       <div className={classes.spacer}></div>
