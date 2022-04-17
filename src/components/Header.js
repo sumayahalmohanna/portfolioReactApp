@@ -55,7 +55,7 @@ const Header = props => {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (pageURL) => {
-    history.push('/home' + pageURL);
+    history.push(pageURL);
   };
 
   const handleMenu = (event) => {
@@ -70,14 +70,14 @@ const Header = props => {
   const navItems = [
     {
       navLabel: 'About',
-      pageURL: '/about'
+      pageURL: '/'
     },
     {
       navLabel: 'Case Studies',
-      pageURL: '/caseStudies'
+      pageURL: '/home/caseStudies'
     },{
       navLabel: 'Contact',
-      pageURL: '/contact'
+      pageURL: '/home/contact'
     }
   ];
 

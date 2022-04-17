@@ -26,8 +26,8 @@ function App(){
     <CssBaseline />
     <Header />
     <Switch>
-      <Redirect exact from="/"  to="/home/about" />
-      <Route exact path="/home/about"  render={props => <About {...props} />} /> 
+      {/* <Redirect exact from="/"  to="/home/about" /> */}
+      <Route exact path="/"  render={props => <About {...props} />} /> 
       <Route exact path="/home/caseStudies"  render={props => <CaseStudies {...props} />} /> 
       <Route exact path="/home/contact"  render={props => <Contact {...props} />} />     
       <Route render={props => <FoFPage {...props} />} />
