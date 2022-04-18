@@ -26,10 +26,10 @@ function App(){
     <CssBaseline />
     <Header />
     <Switch>
-      {/* <Redirect exact from="/"  to="/home/about" /> */}
-      <Route exact path="/"  render={props => <About {...props} />} /> 
-      <Route exact path="/home/caseStudies"  render={props => <CaseStudies {...props} />} /> 
-      <Route exact path="/home/contact"  render={props => <Contact {...props} />} />     
+      <Redirect exact from="/portfolioReactApp/"  to="/portfolioReactApp/home/about" />
+      <Route exact path="/portfolioReactApp/home/about"  render={props => <About {...props} />} /> 
+      <Route exact path="/portfolioReactApp/home/caseStudies"  render={props => <CaseStudies {...props} />} /> 
+      <Route exact path="/portfolioReactApp/home/contact"  render={props => <Contact {...props} />} />     
       <Route render={props => <FoFPage {...props} />} />
       {window.scrollTo(0, 0)}
     </Switch>

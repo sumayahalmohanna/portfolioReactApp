@@ -75,7 +75,7 @@ function Footer() {
                         <Grid item>
                         <Grid container className={classes.pushRight}>
                             <Typography variant='body2' gutterBottom>
-                                © 2015-2021 sumayahdesigns.com</Typography>
+                                © 2015-2021 Sam Almohanna</Typography>
                         </Grid>
                         </Grid>
                     </Grid>

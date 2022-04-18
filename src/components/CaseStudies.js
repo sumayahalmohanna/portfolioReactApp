@@ -205,7 +205,7 @@ function CaseStudies() {
                     </Typography>
                   </Grid>
                   <Grid item xs>
-                    <Link to="/home/contact" className={classes.linkBtn}>
+                    <Link to="/portfolioReactApp/home/contact" className={classes.linkBtn}>
                       <Button size="large" variant="contained" color="primary">
                         Let's Talk!
                       </Button>

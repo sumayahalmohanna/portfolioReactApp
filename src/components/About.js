@@ -123,7 +123,7 @@ function About() {
                   />
                 </Typography>
                 <Typography variant="body1">
-                  I am a Front-end Developer and Designer with 6 years
+                  I am a Front-end Developer and Designer with 7 years
                   experience building websites that are fast, responsive, and
                   focused on UX. My programming background is complemented by my
                   eye for design, enabling me to see a project through every
@@ -148,7 +148,7 @@ function About() {
                       </Typography>
                     </Grid>
                     <Grid item xs>
-                      <Link to="/home/caseStudies" className={classes.linkBtn}>
+                      <Link to="/portfolioReactApp/home/caseStudies" className={classes.linkBtn}>
                         <Button
                           size="large"
                           variant="contained"
@@ -250,7 +250,7 @@ function About() {
                                     </li>
                                     <li>
                                       <Typography variant="body2">
-                                        Bootstrap
+                                        Next.js
                                       </Typography>
                                     </li>
                                   </Grid>
@@ -267,12 +267,12 @@ function About() {
                                     </li>
                                     <li>
                                       <Typography variant="body2">
-                                        React-spring
+                                        Chakra-UI
                                       </Typography>
                                     </li>
                                     <li>
                                       <Typography variant="body2">
-                                        Formik
+                                        Framer-motion
                                       </Typography>
                                     </li>
                                   </Grid>
@@ -387,7 +387,7 @@ function About() {
                               <ul className={classes.subUL}>
                                 <li>
                                   <Typography variant="body2">
-                                    Adobe Design Suite
+                                    Figma
                                   </Typography>
                                 </li>
                                 <li>
@@ -407,7 +407,7 @@ function About() {
                                 </li>
                                 <li>
                                   <Typography variant="body2">
-                                    Pen & Paper
+                                    Pen &amp; Paper
                                   </Typography>
                                 </li>
                               </ul>

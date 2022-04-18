@@ -18,8 +18,8 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: 'none',
   },
   menuIcon: {
-    backgroundColor: props => ((props.location.pathname === '/home/about') ? '#fff' : theme.palette.secondary.main ),
-    color: props => ((props.location.pathname === '/home/about') ? theme.palette.secondary.main : '#fff' ),
+    backgroundColor: props => ((props.location.pathname === '/portfolioReactApp/home/about') ? '#fff' : theme.palette.secondary.main ),
+    color: props => ((props.location.pathname === '/portfolioReactApp/home/about') ? theme.palette.secondary.main : '#fff' ),
     marginRight: theme.spacing(3)
   },
   menuButton: {
@@ -70,14 +70,14 @@ const Header = props => {
   const navItems = [
     {
       navLabel: 'About',
-      pageURL: '/'
+      pageURL: '/portfolioReactApp/home/about'
     },
     {
       navLabel: 'Case Studies',
-      pageURL: '/home/caseStudies'
+      pageURL: '/portfolioReactApp/home/caseStudies'
     },{
       navLabel: 'Contact',
-      pageURL: '/home/contact'
+      pageURL: '/portfolioReactApp/home/contact'
     }
   ];
 
@@ -85,7 +85,7 @@ const Header = props => {
     <div className={classes.root}>
       <AppBar className={classes.appBar} position='static'>
             <Toolbar>
-            <Link to='/'  className={classes.title}><Typography variant="h6">
+            <Link to='/portfolioReactApp/home/about'  className={classes.title}><Typography variant="h6">
             Sam Almohanna
           </Typography></Link>
           <Hidden mdUp>
